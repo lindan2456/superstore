@@ -43,7 +43,7 @@ SQL:
     resp = requests.post(
         MCP_URL,
         json={"sql": sql},
-        timeout=50
+        timeout=60
     )
 
     if resp.status_code != 200:
